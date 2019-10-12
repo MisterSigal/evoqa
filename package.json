@@ -1,0 +1,19 @@
+{
+  "name": "evoqa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisterSigal/evoqa.git"
+  },
+  "author": "Evgeniy Voinovskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MisterSigal/evoqa/issues"
+  },
+  "homepage": "https://github.com/MisterSigal/evoqa#readme"
+}
