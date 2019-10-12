@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/MisterSigal/evoqa/issues"
   },
-  "homepage": "https://github.com/MisterSigal/evoqa#readme"
+  "homepage": "https://github.com/MisterSigal/evoqa#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {},
+  "keywords": []
 }
