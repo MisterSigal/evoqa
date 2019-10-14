@@ -1,0 +1,25 @@
+{
+  "name": "evoqa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisterSigal/evoqa.git"
+  },
+  "author": "Evgeniy Voinovskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MisterSigal/evoqa/issues"
+  },
+  "homepage": "https://github.com/MisterSigal/evoqa#readme",
+  "dependencies": {
+    "mysql": "^2.17.1",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
