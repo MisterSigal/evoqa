@@ -12,6 +12,5 @@ const chrome = require('selenium-webdriver/chrome');
     await driver.wait(until.titleIs('webdriver - Google Search'), 1000);
   } finally {
     await console.log(driver);
-    await driver.quit();
   }
 })();
