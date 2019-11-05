@@ -9,6 +9,6 @@ curl -s https://aerokube.com/cm/bash | bash
 echo "Selenoid is ready!"
 docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk sebp/elk
 echo "ELK is ready!"
-npm run
+npm install
 echo "Selenium is built"
 echo "EVOQA is ready to work!"
