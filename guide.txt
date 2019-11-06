@@ -1,0 +1,1 @@
+You need sdrout and sdrerr for Selenoid logs (&>)
