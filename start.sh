@@ -4,7 +4,7 @@
 apt-get update
 apt-get install npm -y
 apt-get install nodejs -y
-apt-get install openjdk-8-jdk-headless
+apt-get install openjdk-8-jdk-headless -y
 
 #Machine tweaks
 sudo sysctl -w vm.max_map_count=262145
