@@ -19,3 +19,9 @@ TODO list
 1 Map Logstash, filebeat and Selenoid output
 
 2 Create Base classes for Selenium
+
+3 Add Mysql and SSH module
+
+4 Export config settings for Selenium
+
+5 Create UI to control Selenium settings
