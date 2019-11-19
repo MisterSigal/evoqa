@@ -24,4 +24,8 @@ echo "ELK is ready!"
 npm install
 echo "Selenium is built"
 
+#fileabeat
+bash filebeat/start_filebeat.sh
+echo "Filebeat is ready"
+
 echo "EVOQA is ready to work!"
