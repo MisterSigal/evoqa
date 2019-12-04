@@ -25,7 +25,7 @@ docker-compose -f ./elka/docker-compose.yml up -d
 echo "ELK is ready!"
 
 #selenium
-npm install
+npm install --prefix ./selenium
 echo "Selenium is built"
 
 echo "EVOQA is ready to work!"
