@@ -20,8 +20,8 @@ curl -s https://aerokube.com/cm/bash | bash
 echo "Selenoid is ready!"
 
   #elk
-git clone https://github.com/MisterSigal/docker-elk.git
-docker-compose -f ./docker-elk/docker-compose.yml up -d
+git clone https://github.com/MisterSigal/docker-elk.git elka
+docker-compose -f ./elka/docker-compose.yml up -d
 echo "ELK is ready!"
 
 #selenium
