@@ -14,9 +14,9 @@ sudo sysctl -w vm.max_map_count=262145
 
 #docker containers
   #selenoid
-curl -s https://aerokube.com/cm/bash | bash
-./cm selenoid start --vnc | bash
-./cm selenoid-ui start
+curl -o ./cm -s https://aerokube.com/cm/bash | bash
+./cm/cm selenoid start --vnc | bash
+./cm/cm selenoid-ui start
 echo "Selenoid is ready!"
 
   #elk
