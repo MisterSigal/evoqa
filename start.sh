@@ -1,30 +1,24 @@
 #!/bin/bash
+source ./.env
 
-# apps installation
-apt-get update
-apt-get install npm -y
-apt-get install nodejs -y
-apt-get install openjdk-8-jdk-headless -y
-# docker-compose installation
-# sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-# sudo chmod a+rx /usr/local/bin/docker-compose  
+  #setup environment
+#bash env_setup.sh
 
-#Machine tweaks
-sudo sysctl -w vm.max_map_count=262145
-
-#docker containers
-  #selenoid
-curl -o ./cm -s https://aerokube.com/cm/bash | bash
-./cm/cm selenoid start --vnc | bash
-./cm/cm selenoid-ui start
+  #setup selenoid
+cd ./cm
+curl -s https://aerokube.com/cm/bash | bash
+docker pull selenoid/vnc_chrome:$CHROME_VNC_VERSION
+./cm selenoid start --vnc | bash
+./cm selenoid-ui start
+cd ..
 echo "Selenoid is ready!"
 
-  #elk
-git clone https://github.com/MisterSigal/docker-elk.git elka
-docker-compose -f ./elka/docker-compose.yml up -d
-echo "ELK is ready!"
+  #setup elk
+#git clone https://github.com/MisterSigal/docker-elk.git elka
+#docker-compose -f ./elka/docker-compose.yml up -d
+#echo "ELK is ready!"
 
-#selenium
+  #setup selenium
 npm install --prefix ./selenium
 echo "Selenium is built"
 
