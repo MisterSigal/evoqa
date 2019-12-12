@@ -16,3 +16,15 @@ const chrome = require('selenium-webdriver/chrome');
     await driver.quit();
   }
 })();
+
+
+const path = require('path');
+const { ServiceBuilder } = require('selenium-webdriver/chrome');
+const { Builder } = require('selenium-webdriver');
+
+const geckoDriverPath = path.join(__dirname, "geckodriver"); // or wherever you've your geckodriver
+const serviceBuilder = new ServiceBuilder(geckoDriverPath);
+const SeleniumDriver = await new Builder()
+  .forBrowser('chrome')
+  .setFirefoxService(serviceBuilder)
+  .build();
