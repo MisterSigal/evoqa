@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MisterSigal/evoqa#readme",
   "dependencies": {
+    "chromedriver": "^79.0.0",
     "mocha": "^6.2.2",
     "mysql": "^2.17.1",
     "selenium-webdriver": "^4.0.0-alpha.5"

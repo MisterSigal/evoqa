@@ -1,12 +1,14 @@
 const {Builder, By, Key, until} = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
+const chromedriverPath = require('chromedriver').path;
 
 (async function example() {
   let driver = await new Builder()
-    .withCapabilities({'browserName': 'chrome', 'enableVNC': true })
-    .usingServer('http://0.0.0.0:4444/wd/hub')	
+    .forBrowser('chrome')
+    .setChromeOptions(chromedriverPath)
     .build();
   try {
+    await console.log(chromedriverPath, driver.setChromeOptions)
     await driver.get('http://www.google.com/ncr');
     await driver.findElement(By.name('q')).sendKeys('webdriver', Key.RETURN);
     await driver.wait(until.titleIs('webdriver - Google Search'), 1000);
@@ -16,3 +18,4 @@ const chrome = require('selenium-webdriver/chrome');
     await driver.quit();
   }
 })();
+
