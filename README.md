@@ -1,3 +1,3 @@
 # evoqa
 
-EVOQA is E2E and API JavaScript testing framework ready to execute tests in containers after few clicks.
+EVOQA is Javascript E2E UI and API testing framework ready to deliver containers with tests to your CI after few clicks.
