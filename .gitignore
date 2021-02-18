@@ -1,8 +1,1 @@
-#ignore
-selenium/node_modules/
 node_modules/
-elka/
-cm/*
-
-#don't ignore
-
