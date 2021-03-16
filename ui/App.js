@@ -1,6 +1,6 @@
 import { Builder, until } from 'selenium-webdriver'
 
-class Driver {
+class App {
     constructor() {
         this.webdriver
     }
@@ -18,4 +18,4 @@ class Driver {
     }
 }
 
-export var driver = new Driver()
+export var driver = new App()

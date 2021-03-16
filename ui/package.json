@@ -1,11 +1,11 @@
 {
+  "type": "module",
   "name": "evoqa",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter mochawesome --reporter-options=autoOpen",
-    "test_prod": "./node_modules/mocha/bin/mocha --reporter mochawesome --reporter-options=autoOpen suite/issueLifetime.js --location='prod'"
+    "test": "mocha --reporter mochawesome --reporter-options=autoOpen"
   },
   "repository": {
     "type": "git",
