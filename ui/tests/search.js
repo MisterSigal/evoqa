@@ -1,5 +1,5 @@
 import { ExamplePage } from "../pages/examplePage.js"
 
-export function login() {
-    
+export function search() {
+    await ExamplePage.login
 }
