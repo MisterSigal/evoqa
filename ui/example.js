@@ -1,8 +1,5 @@
-// const {Builder, By, Key, until} = require('selenium-webdriver');
-// const chrome = require('selenium-webdriver/chrome');
-// const chromedriverPath = require('chromedriver').path;
-
 import { driver } from './App.js'
+import { By } from 'selenium-webdriver'
 import { By, Key, until } from 'selenium-webdriver'
 
 (async function example() {
